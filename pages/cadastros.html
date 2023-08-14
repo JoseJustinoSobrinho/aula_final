@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de promoções</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Site de promoções</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gerenciamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/relatorios.html">Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Configurações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-xl">
+        <div class="row">
+            <h1>Cadastro de Promoções</h1>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap">
+            <div> <!-- Espaço do formulario -->
+                <form>
+                    <div class="mb-3">
+                        <label for="produto" class="form-label">Produto:</label>
+                        <input type="text" class="form-control" id="produto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Descrição:</label>
+                        <input type="text" class="form-control" id="descricao">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loja" class="form-label">Loja:</label>
+                        <input type="text" class="form-control" id="loja">
+                    </div>
+                    <div class="mb-3">
+                        <label for="preco" class="form-label">Preço:</label>
+                        <input type="number" class="form-control" id="preco">
+                    </div>
+                    <div class="mb-3">
+                        <label for="preco" class="form-label">Imagem:</label>
+                        <input type="file" class="form-control" id="inputGroupFile01" aria-label="Escolha a imagem">
+                      </div>
+                    <div class="mb-3">
+                        <label for="data-postagem" class="form-label">Data da postagem:</label>
+                        <input type="date" class="form-control" id="data-postagem" >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Situação:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="situacao" id="ativo" value="m">
+                            <label for="ativo" class="form-check-label">Ativo</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="situacao" id="encerrado" value="f">
+                            <label for="encerrado" class="form-check-label">Encerrado</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="situacao" id="pendente" value="o">
+                            <label for="pendente" class="form-check-label">Pendente</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="uf" class="form-label">Categoria:</label>
+                        <select name="" id="uf" class="form-select">
+                            <option selected disabled>Selecione a categoria...</option>
+                            <option value="eletronico">Eletronicos</option>
+                            <option value="casa">Casa</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Alimentos">Alimentos</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success btn-lg">Cadastrar</button>
+                        <button type="reset" class="btn btn-light btn-lg">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div> <!-- Espaço da tabela -->
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Loja</th>
+                        <th>Preço</th>
+                        <th>Ações </th> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00001</td>
+                            <td>iPhone 14</td>
+                            <td>128GB</td>
+                            <td>Amazon</td>
+                            <td alig>R$ 7.500,00</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>00002</td>
+                            <td>Notebook DELL i5</td>
+                            <td>Core i5</td>
+                            <td>Ponto</td>
+                            <td class="text-end">R$ 99,00</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>00003</td>
+                            <td>iPhone 13 PRO</td>
+                            <td>256GB</td>
+                            <td>Magazine</td>
+                            <td class="text-end">R$ 99,90</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>00004</td>
+                            <td>Motorola Moto G</td>
+                            <td>128GB</td>
+                            <td>Amazon</td>
+                            <td class="text-end">R$ 1.790,90</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
